@@ -50,21 +50,13 @@
 <div class="container">
     <div class="starter-template">
         <h1>
-            @if($category == 'mobiles')
-                Мобильные телефоны
-            @elseif($category == 'portable')
-                Портативная техника
-            @elseif($category == 'appliances')
-                Бытовая техника
-            @endif
+            {{$category->name}}
         </h1>
-        <p>
-            В этом разделе вы найдёте самые популярные мобильные телефонамы по отличным ценам! </p>
+        <p>{{$category->description}}</p>
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <div class="labels">
-
 
                     </div>
                     <img src="http://internet-shop.tmweb.ru/storage/products/iphone_x.jpg" alt="iPhone X 64GB">
@@ -85,7 +77,6 @@
                 <div class="thumbnail">
                     <div class="labels">
 
-
                     </div>
                     <img src="http://internet-shop.tmweb.ru/storage/products/iphone_x_silver.jpg" alt="iPhone X 256GB">
                     <div class="caption">
@@ -105,7 +96,6 @@
                 <div class="thumbnail">
                     <div class="labels">
 
-
                     </div>
                     <img src="http://internet-shop.tmweb.ru/storage/products/htc_one_s.png" alt="HTC One S">
                     <div class="caption">
@@ -123,7 +113,6 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <div class="labels">
-
 
                     </div>
                     <img src="http://internet-shop.tmweb.ru/storage/products/iphone_5.jpg" alt="iPhone 5SE">
@@ -143,7 +132,6 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <div class="labels">
-
 
                     </div>
                     <img src="http://internet-shop.tmweb.ru/storage/products/samsung_j6.jpg" alt="Samsung Galaxy J6">
