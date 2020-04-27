@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Category;
-use Illuminate\Http\Request;
+use App\Product;
 
 class MainController extends Controller {
     public function index() {
-        return view('index');
+        $products =Product::get();
+        return view('index', compact('products'));
     }
 
     public function categories() {
