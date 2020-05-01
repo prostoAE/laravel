@@ -28,15 +28,14 @@
                         </td>
                         <td><span class="badge">1</span>
                             <div class="btn-group form-inline">
-                                <form action="{{route('basket-add', $product)}}" method="POST">
-                                    @csrf
+                                <form action="http://internet-shop.tmweb.ru/basket/add/1" method="POST">
                                     <button type="submit" class="btn btn-danger" href=""><span
                                             class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
                                 </form>
-                                <form action="http://internet-shop.tmweb.ru/basket/add/1" method="POST">
+                                <form action="{{route('basket-add', $product)}}" method="POST">
+                                    @csrf
                                     <button type="submit" class="btn btn-success" href=""><span
                                             class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
-                                    <input type="hidden" name="_token" value="6AEbWtp9hdSYn0Uuhyi2qooAq53QJrTQCtqaHMYa">
                                 </form>
                             </div>
                         </td>

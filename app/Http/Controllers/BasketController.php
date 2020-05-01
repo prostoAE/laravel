@@ -6,8 +6,9 @@ use App\Order;
 use Illuminate\Http\Request;
 
 class BasketController extends Controller {
+
     public function basket($product = null) {
-        $orderId = session('orderId');
+        $orderId = session('order_id');
         if (!is_null($orderId)) {
             $order = Order::findOrFail($orderId);
         }
@@ -20,7 +21,7 @@ class BasketController extends Controller {
     }
 
     public function basketAdd($productId) {
-        $orderId = session('orderId');
+        $orderId = session('order_id');
         if (is_null($orderId)) {
             $order = Order::create();
             session(['order_id' => $order->id]);
