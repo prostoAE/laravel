@@ -1,0 +1,3 @@
+INSERT INTO laravel.categories (id, name, code, description, image, created_at, updated_at) VALUES (1, 'Мобильные телефоны', 'mobiles', 'Описание мобильных телефонов', null, null, null);
+INSERT INTO laravel.categories (id, name, code, description, image, created_at, updated_at) VALUES (2, 'Портативная техника', 'portable', 'Описание для раздела портативной техники', null, null, null);
+INSERT INTO laravel.categories (id, name, code, description, image, created_at, updated_at) VALUES (3, 'Бытовая техника', 'technics', null, null, null, null);
